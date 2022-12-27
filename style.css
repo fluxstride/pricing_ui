@@ -1,1 +1,124 @@
-/*# sourceMappingURL=style.css.map */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.heading {
+  background-color: #6b46c1;
+  padding: 6rem 1.8rem 18rem;
+}
+.heading-title {
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 39px;
+  font-size: 3rem;
+}
+.heading-text {
+  font-weight: 500;
+  color: rgba(247, 250, 252, 0.8);
+  line-height: 32px;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 720px) {
+  .heading {
+    text-align: center;
+    padding-top: 8rem;
+  }
+  .heading-title {
+    font-size: 4.8rem;
+    line-height: 6rem;
+  }
+}
+
+.pricing-container {
+  padding-inline: 1.8rem;
+}
+.pricing-container .price-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1.2rem;
+  transform: translateY(-14rem);
+  overflow: hidden;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .pricing-container .price-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+  }
+}
+.pricing-container .price-card .top-section,
+.pricing-container .price-card .bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pricing-container .price-card .top-section {
+  background-color: #f0eafb;
+  text-align: center;
+  padding: 6rem 4rem;
+  flex-grow: 1;
+}
+.pricing-container .price-card .top-section h1,
+.pricing-container .price-card .top-section h2 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.pricing-container .price-card .top-section h2 {
+  font-size: 2.4rem;
+}
+.pricing-container .price-card .top-section h1 {
+  font-size: 4.8rem;
+}
+.pricing-container .price-card .top-section p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.01rem;
+}
+.pricing-container .price-card .top-section a {
+  text-decoration: none;
+  padding: 1.5rem;
+  background-color: #805ad5;
+  display: inline-block;
+  min-width: 200px;
+  margin-top: 4rem;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  font-weight: 700;
+}
+.pricing-container .price-card .bottom-section {
+  padding: 4rem;
+  background-color: #fff;
+  flex-grow: 2;
+}
+.pricing-container .price-card .bottom-section .main-text {
+  font-size: 1.8rem;
+}
+.pricing-container .price-card .bottom-section .bullets {
+  margin-top: 3rem;
+}
+.pricing-container .price-card .bottom-section .bullets .bullet {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.pricing-container .price-card .bottom-section .bullets .bullet:last-of-type {
+  margin-bottom: 0;
+}
+.pricing-container .price-card .bottom-section .bullets .bullet img {
+  margin-right: 1rem;
+}/*# sourceMappingURL=style.css.map */

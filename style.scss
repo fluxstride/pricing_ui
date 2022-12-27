@@ -1,2 +1,138 @@
-body {
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.heading {
+  background-color: #6b46c1;
+  padding: 6rem 1.8rem 18rem;
+
+  &-title {
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 2rem;
+    line-height: 39px;
+    font-size: 3rem;
+  }
+
+  &-text {
+    font-weight: 500;
+    color: #f7fafccc;
+    line-height: 32px;
+    font-size: 1.8rem;
+  }
+
+  @media screen and (min-width: 720px) {
+    text-align: center;
+    padding-top: 8rem;
+
+    &-title {
+      font-size: 4.8rem;
+      line-height: 6rem;
+    }
+  }
+}
+
+.pricing-container {
+  padding-inline: 1.8rem;
+
+  .price-card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1.2rem;
+    transform: translateY(-14rem);
+    overflow: hidden;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      max-width: 80%;
+    }
+
+    .top-section,
+    .bottom-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .top-section {
+      background-color: #f0eafb;
+      text-align: center;
+      padding: 6rem 4rem;
+      flex-grow: 1;
+
+      h1,
+      h2 {
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 2.4rem;
+      }
+
+      h1 {
+        font-size: 4.8rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: -0.01rem;
+      }
+
+      a {
+        text-decoration: none;
+        padding: 1.5rem;
+        background-color: #805ad5;
+        display: inline-block;
+        min-width: 200px;
+        margin-top: 4rem;
+        color: #fff;
+        font-size: 1.6rem;
+        border-radius: 1.2rem;
+        font-weight: 700;
+      }
+    }
+
+    .bottom-section {
+      padding: 4rem;
+      background-color: #fff;
+      flex-grow: 2;
+
+      .main-text {
+        font-size: 1.8rem;
+      }
+
+      .bullets {
+        margin-top: 3rem;
+        .bullet {
+          font-size: 1.8rem;
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          img {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
