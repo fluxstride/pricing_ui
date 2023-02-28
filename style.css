@@ -142,7 +142,7 @@ p {
   .highlights {
     gap: 3rem;
     max-width: 80%;
-    margin-top: 1rem !important;
+    margin-top: 1rem;
   }
 }
 .highlights .highligt {
@@ -156,4 +156,9 @@ p {
 }
 .highlights .highligt p {
   font-weight: 700;
+}
+@media screen and (max-width: 375px) {
+  .highlights .highligt {
+    min-width: calc(100% - 3.6rem);
+  }
 }/*# sourceMappingURL=style.css.map */
